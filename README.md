@@ -1,17 +1,17 @@
-# Epiphany
+# Epyphany
 
-An in development network discovery service. Epiphany facilitates the broadcast of a discovery packet to the network so any number of clients running Epiphany can see it.
+An in development network discovery service. Epyphany facilitates the broadcast of a discovery packet to the network so any number of clients running Epyphany can see it.
 
 ## Getting Started
 
-Epiphany supports python 3. To install it, simply run `pip install epiphany`.
+Epyphany supports python 3. To install it, simply run `pip install epyphany`.
 
 #### Step 1
-Initialize Epiphany using a port dedicated for discovery broadcasts. Here, we'll use `6000`.
+Initialize Epyphany using a port dedicated for discovery broadcasts. Here, we'll use `6000`.
 ```python
-from epiphany import Epiphany, Service
+from epyphany import Epyphany, Service
 
-epiphany = Epiphany(port=6000)
+epyphany = Epyphany(port=6000)
 ```
 
 #### Step 2
@@ -32,14 +32,14 @@ class TestService(Service):
     # Any additional data the client may need to know
     return {'foo': 'bar'}
 
-# Register the service with Epiphany
-epiphany.register_service(MasterService)
+# Register the service with Epyphany
+epyphany.register_service(MasterService)
 ```
 
 #### Step 3
 Then register a listener. This will be triggered every time it receives the broadcast packet. (By default, it would be approximately every 5 seconds)
 ```python
-@epiphany.register_listener('test')
+@epyphany.register_listener('test')
 def on_discovery_test(protocol, service):
   print('%s: %s:%d' % (service.id, service.ip, service.port))
   print(service.payload)
@@ -49,7 +49,7 @@ def on_discovery_test(protocol, service):
 
 * **Trevin Miller** - *Initial work* - [Stumblinbear](https://github.com/Stumblinbear)
 
-See also the list of [contributors](https://github.com/Secret-Web/Epiphany/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Secret-Web/Epyphany/contributors) who participated in this project.
 
 ## License
 
