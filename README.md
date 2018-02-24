@@ -48,6 +48,7 @@ def on_discovery_test(protocol, service):
 ## Authors
 
 * **Trevin Miller** - *Initial work* - [Stumblinbear](https://github.com/Stumblinbear)
+* **Bill Miller** - *Some creative inspiration and lots of frustration* - [Secretweb-com](https://github.com/Secretweb-com)
 
 See also the list of [contributors](https://github.com/Secret-Web/Epyphany/contributors) who participated in this project.
 
