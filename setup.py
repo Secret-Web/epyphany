@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name = 'epyphany',
-    version = '0.1.1',
+    version = '0.1.3',
     packages=['epyphany'],
     description = ('A script for facilitating network service discovery.'),
     python_requires='>=3.5.3',
